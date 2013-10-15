@@ -2282,7 +2282,7 @@ config CPU_OC
 	  Unlock the CPU Overclock freq speed @ 2.3 GHz
 
 config OC_ULTIMATE
-	bool "allow 2.496 GHz max OC option"
+	bool "allow 2.649 GHz max OC option"
 	depends on CPU_OC
 	default n
 	help
