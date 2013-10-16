@@ -1985,7 +1985,7 @@ static int __init cpufreq_gov_dbs_init(void)
 	}
 	for_each_possible_cpu(i) {
 		struct cpu_dbs_info_s *this_dbs_info =
-			&per_cpu(od_cpu_dbs_info, i);
+			&per_cpu(id_cpu_dbs_info, i);
 		struct dbs_work_struct *dbs_work =
 			&per_cpu(dbs_refresh_work, i);
 
