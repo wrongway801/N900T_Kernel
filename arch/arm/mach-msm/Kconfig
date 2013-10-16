@@ -2286,7 +2286,7 @@ config OC_ULTIMATE
 	depends on CPU_OC
 	default n
 	help
-	  Unlock the ultimate Overclock freq speed @ 2.496 GHz
+	  Unlock the ultimate Overclock freq speed @ 2.649 GHz
 
 endif # CPU_FREQ_MSM
 
