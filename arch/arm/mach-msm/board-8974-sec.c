@@ -55,6 +55,9 @@
 #include "lpm_resources.h"
 #include <linux/module.h>
 #include "platsmp.h"
+#ifdef CONFIG_CPU_FREQ_GOV_INTELLIDEMAND
+int id_set_two_phase_freq(int cpufreq);
+#endif
 #if defined(CONFIG_MSM_VIBRATOR) || defined(CONFIG_VIBETONZ)
 #include <linux/vibrator.h>
 #endif
@@ -446,6 +449,10 @@ void __init msm8974_add_drivers(void)
 		msm_clock_init(&msm8974_clock_init_data);
 	tsens_tm_init_driver();
 	msm_thermal_device_init();
+
+#ifdef CONFIG_CPU_FREQ_GOV_INTELLIDEMAND
+    id_set_two_phase_freq(1728000);
+#endif
 }
 
 static struct of_dev_auxdata msm8974_auxdata_lookup[] __initdata = {

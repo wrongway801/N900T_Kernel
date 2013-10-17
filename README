@@ -373,4 +373,7 @@ IF SOMETHING GOES WRONG:
 
    gdb'ing a non-running kernel currently fails because gdb (wrongly)
    disregards the starting offset for which the kernel is compiled.
+   
+   #Reference for me
+   make msm8974_sec_defconfig VARIANT_DEFCONFIG=msm8974_sec_hltetmo_defconfig DEBUG_DEFCONFIG= SELINUX_DEFCONFIG=selinux_defconfig  SELINUX_LOG_DEFCONFIG=selinux_log_defconfig TIMA_DEFCONFIG=tima_defconfig
 
