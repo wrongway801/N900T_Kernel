@@ -3312,7 +3312,7 @@ config SEC_PERIPHERAL_SECURE_CHK
           To check the authentication of peripheral image.	  
 
 config SEC_LOG_LAST_KMSG
-	default n
+	default y
 	bool "Enable /proc/last_kmsg support: if EMBEDDED"
 	help
 	  This option enables /proc/last_kmsg support.
