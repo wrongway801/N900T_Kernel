@@ -492,8 +492,9 @@ void __init msm8974_add_drivers(void)
 	else
 		msm_clock_init(&msm8974_clock_init_data);
 	tsens_tm_init_driver();
+#ifndef CONFIG_INTELLI_THERMAL
 	msm_thermal_device_init();
-
+#endif
 #ifdef CONFIG_CPU_FREQ_GOV_INTELLIDEMAND
     id_set_two_phase_freq(1728000);
 #endif
