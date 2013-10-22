@@ -1331,10 +1331,10 @@ static inline u32 page_hash(struct page *page, unsigned long hash_strength,
 	u32 val;
 	unsigned long delta;
 
-	void *addr = kmap_atomic(page, KM_USER0);
+	void *addr = kmap_atomic(page);
 
 	val = random_sample_hash(addr, hash_strength);
-	kunmap_atomic(addr, KM_USER0);
+	kunmap_atomic(addr);
 
 	if (cost_accounting) {
 		if (HASH_STRENGTH_FULL > hash_strength)
