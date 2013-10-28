@@ -1,7 +1,7 @@
 VERSION = 3
 PATCHLEVEL = 4
 SUBLEVEL = 0
-EXTRAVERSION =_Compulsion_Kernel_5.0
+EXTRAVERSION =_Compulsion_Kernel_6.0
 NAME = Saber-toothed Squirrel
 
 # *DOCUMENTATION*
